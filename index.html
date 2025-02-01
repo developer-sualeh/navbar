@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav container">
+        <div class="nav__data">
+          <a href="" class="logo"> LOGO </a>
+
+          <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li><a href="#" class="nav__link">Home</a></li>
+            <li class="dropdown__item">
+              <div id="service" class="nav__link">
+                Services <i id="arrow" class="fa-solid fa-angle-down"></i>
+              </div>
+              <ul id="dropdown__menu" class="dropdown__menu">
+                <li>
+                  <a href="#" class="dropdown__link"> services 1 </a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown__link"> information </a>
+                </li>
+
+                <!-- ========== Start dropdown submenu Section ========== -->
+                <li class="dropdown_subitem">
+                  <div id="report" class="dropdown__link">
+                    Report
+
+                    <i class="fa-solid fa-plus plus"></i>
+                  </div>
+                  <ul id="dropdown-sub__menu" class="dropdown-sub__menu">
+                    <li>
+                      <a href="#" class="dropdown-sub--link">
+                        <i class="fa-solid fa-file"></i> Document
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-sub--link">
+                        <i class="fa-solid fa-sack-dollar"></i> Payment
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="dropdown-sub--link">
+                        <i class="fa-brands fa-slack"></i> Refund
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- ========== End dropdown submenu Section ========== -->
+              </ul>
+            </li>
+            <li><a href="#" class="nav__link">Products</a></li>
+            <li class="dropdown__item">
+              <div id="about" class="nav__link">
+                About <i id="up-arrow" class="fa-solid fa-angle-down"></i>
+              </div>
+              <ul id="about-dropdown" class="dropdown__menu">
+                <li>
+                  <a href="#" class="dropdown__link"> Overview </a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown__link"> Team </a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#" class="nav__link">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <script src="script.js"></script>
+  </body>
+</html>
